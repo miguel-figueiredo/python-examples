@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+aiohttp = "==3.8.1"
+prometheus-async = {version = "==22.2.0", extras = ["aiohttp"]}
+psutil = "==5.9.3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+start = "python -m main"
